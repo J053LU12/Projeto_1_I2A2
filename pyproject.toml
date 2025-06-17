@@ -1,9 +1,17 @@
-[project]
+[tool.poetry]
 name = "agente-1"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.11"
-dependencies = []
-
+description = "TributAI Streamlit app"
+authors = ["José <email@example.com>"]
 package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+streamlit = "*"
+pandas = "*"
+
+# 
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
